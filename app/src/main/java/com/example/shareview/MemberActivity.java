@@ -23,8 +23,6 @@ public class MemberActivity extends AppCompatActivity {
         touroku_button = (Button) findViewById(R.id.touroku_button);
     }
 
-    public void onTourokuButtonClick(View view) {
-
-    }
+    
 
 }

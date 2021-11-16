@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MemberActivity">
 
+    <!-- ツールバーをセット !-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        style="TextAppearance.Toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/blue1"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Share View"
+            android:textSize="30sp"
+            android:textColor="#d9c9ba"
+            android:gravity = "center"
+            android:id="@+id/toolbar_title" />
+    </androidx.appcompat.widget.Toolbar>
+
     <TextView
         android:id="@+id/t_id"
         android:layout_width="wrap_content"
@@ -43,7 +62,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/frame_style"
+        android:background="@drawable/flame_text"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="24sp"
@@ -74,7 +93,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/frame_style"
+        android:background="@drawable/flame_text"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="24sp"
@@ -92,8 +111,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="onTourokuButtonClick"
-        android:background="@drawable/sin_button"
+        android:background="@drawable/flame_button"
         android:text="登録"
         android:textColor="#f2f2f2"
         android:textSize="24sp"
@@ -113,27 +131,27 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/frame_style"
+        android:background="@drawable/flame_text"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/t_id" />
 
+    <!-- 名前の入力欄 -->
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:layout_marginTop="24dp"
         android:text="@string/name"
         android:textColor="#4a7a8c"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
 
-    <!-- 名前の入力欄 -->
     <EditText
         android:id="@+id/text_name"
         android:layout_width="300dp"
@@ -143,7 +161,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/frame_style"
+        android:background="@drawable/flame_text"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
